@@ -2,7 +2,7 @@ machado = ["casaVelha.txt", "domCasmurro.txt", "esau.txt", "iaia.txt", "memorial
 
 stopwords = ["-", "—"]
 
-output = open("tmp/palavras.txt", "w")
+output = open("tmp/1.palavras.txt", "w")
 
 for livro in machado:
   print("Tratando livro: " + livro)
