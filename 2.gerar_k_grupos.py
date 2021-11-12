@@ -1,6 +1,6 @@
 palavras = open("tmp/1.palavras.txt", "r")
 
-k = 3
+k = 2
 
 lista = [""]*(k+1)
 
@@ -11,4 +11,5 @@ for palavra in palavras:
   del lista[-1]
   if lista[1] != "" or lista[2] != "":
     output.write("\t".join(lista) + "\n")
+
 print("Acabou")

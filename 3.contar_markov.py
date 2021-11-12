@@ -1,4 +1,4 @@
-k = 3
+k = 2
 grupos = open("tmp/2.k-grupos.txt", "r")
 
 contagem = {}
@@ -24,6 +24,7 @@ output_estados = open("tmp/3.1.contagem-estados.txt", "w")
 output_modelo = open("tmp/4.modelo-sugestao.txt", "w")
 
 for estado in contagem:
+  if estado == "": continue
   soma = 0
   e = contagem[estado]
   for transicao in e:

@@ -11,7 +11,7 @@ for linha in modelo_treinado:
   modelo[entradas] = sugestoes
 
 while(True):
-  entrada = input("Escreva 3 palavras que daremos sugestões. \".\" para sair:\n")
+  entrada = input("Escreva " + str(k) + " palavras que daremos sugestões. \".\" para sair:\n")
   if entrada == ".":
     break
   palavras = ",".join(map(lambda x: x.strip(" .,;!?/\"\'+-)(:"), entrada.lower().split()))
