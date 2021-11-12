@@ -2,7 +2,7 @@ palavras = open("tmp/1.palavras.txt", "r")
 
 k = 3
 
-lista = [""]*k
+lista = [""]*(k+1)
 
 output = open("tmp/2.k-grupos.txt", "w")
 
